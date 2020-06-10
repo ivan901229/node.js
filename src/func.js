@@ -1,11 +1,16 @@
-const f1 = a=> a*a;
-const f2 = ()=>{
-    let sum = 0;
-    for(let i=1; i<=10; i++){
-        sum += i;
-    }
-    return sum;
+const f1 = a => a*a;
+
+const f1a = function(a){
+    return a*a;
 }
 
-console.log(f1(6));
+const f2 = () => {
+    let s = 0;
+    for(let i=1; i<=10; i++){
+        s += i;
+    }
+    return s;
+}
+
+console.log(f1(7));
 console.log(f2());

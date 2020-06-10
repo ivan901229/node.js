@@ -4,17 +4,14 @@ class Person {
         this.age = age;
     }
     toJSON(){
-        const  obj = {
+        return JSON.stringify({
             name: this.name,
             age: this.age
-        }
-        return JSON.stringify(obj);
+        });
     }
 }
-module.exports = Person;
 
-// Person = require('./person');
-const p1 = new Person('Bill', 26);
-const p2 = new Person;
+const p1 = new Person('bill', 25);
 console.log(p1.toJSON());
-console.log(p2.toJSON());
+
+module.exports = Person;
